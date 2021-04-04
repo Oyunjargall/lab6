@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>ТАВТАЙ МОРИЛ</title>
+</head>
+<body>
+  <header>
+    </div>
+    <div class="main"> 
+      <ul>
+        <li><a href="index.html">Нүүр</a></li>
+        <li><a href="about.html">Танилцуулга</a></li>
+        <li><a href="pay.html">Элсэлт</a></li>
+        <li><a href="contact.html">Холбоо барих</a></li>
+      </ul>
+      <style type="text/css">
+        ul{
+          display: inline-block;
+          list-style-type: none;
+        }
+        ul li{
+          display: inline-block;
+        }
+        ul li a{
+          text-decoration: none;
+          color: black;
+          padding: 5px 20px;
+          border: 1px solid black;
+          font-size: 18px;
+          font-family: Century Gothic;
+        }
+        ul li a:hover{
+          background-color: #fff;
+          color: 000;
+          transition: 0.6s ease;
+        }
+      </style>
+    </div>
+  </header>
+</body>
+<style type="text/css">
+  *, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: #ffb3b3;
+  font-size: 12px;
+}
+
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #808080;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  font-size: 26px;
+}
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #fff;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #fff;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ff944d;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+</style>
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>ХОЛБОО</span>
+            <span>БАРИХ</span>
+          </div>
+          <div class="app-contact">УТАС: +976 93030005</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Хүүхдийн нэр">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Хүүхдийн нас">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Таны е-майл">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Утасны дугаар">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="Асуух зүйлээ бичнэ үү.">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">Цуцлах</button>
+              <button class="app-form-button">Илгээх</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>Цахим хуудсууд</p>
+  <a href="https://www.facebook.com/oyu.monkhjargal">
+      <img src="facebook.png" width="80" height="80">
+    </a>
+
+
+    <a href="mailto:oyu9912@gmail.com">
+      <img src="email.png" width="80" height="80">
+    </a>
+
+    <a href="https://www.instagram.com/oyunimm/"> 
+    <img src="insta.png" width="80" height="80">
+    </a>
+</footer>
+<style type="text/css">
+  footer{
+  text-align: center;
+  padding: 3px;
+  background-color: #ffb3b3;
+  color: white;
+}
+p{
+  font-size: 30px;
+  font-family: arial;
+}
+</style>
